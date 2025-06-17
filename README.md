@@ -48,7 +48,7 @@ for _ in range(1000):
 env.close()
 # Note: The `render()` method is used to visualize the environment.
 ```
-We are done if you see an animation.
+We are done for open ai gym if you see an animation.
 
 
 
