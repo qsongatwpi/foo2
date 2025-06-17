@@ -21,3 +21,8 @@
 2. If the output shows Anaconda path like `/opt/anaconda3/bin/python`, you need to switch interpreters
 3. Select the Homebrew Python interpreter in VS Code settings
 4. Re-run the script to confirm it now uses the Homebrew Python installation
+
+
+### Install numpyt and scipy packages
+1. Create virtual environment
+2. 
