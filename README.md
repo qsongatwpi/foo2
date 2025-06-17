@@ -23,6 +23,32 @@
 4. Re-run the script to confirm it now uses the Homebrew Python installation
 
 
-### Install numpyt and scipy packages
+### Install some essential packages
 1. Create virtual environment
-2. 
+2. run in terminal: `python3 -m pip install numpy` and similarly scipy, matplotlib
+3. run `python3 -m pip list` to check installed packages
+
+### install open ai gymnasium
+1. run command: `pip install "gymnasium[all]"` 
+2. run python code: 
+```
+import gymnasium as gym
+
+env = gym.make("CartPole-v1", render_mode="human")  # Important: set render_mode
+observation, info = env.reset(seed=42)
+
+for _ in range(1000):
+    env.render()  # This displays the environment
+    action = env.action_space.sample()
+    observation, reward, terminated, truncated, info = env.step(action)
+
+    if terminated or truncated:
+        observation, info = env.reset()
+
+env.close()
+# Note: The `render()` method is used to visualize the environment.
+```
+We are done if you see an animation.
+
+
+
