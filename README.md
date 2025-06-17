@@ -1,2 +1,3 @@
 # foo2
-learning
+I want to use python on vs code on mac os to learn open ai gym and pinns.
+
