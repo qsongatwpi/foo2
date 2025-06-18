@@ -18,43 +18,40 @@
 
 ### Configure VS Code Python Interpreter
 1. Run your Python script (e.g., `./src/hello1.py`) in VS Code
-2. If the output shows Anaconda path like `/opt/anaconda3/bin/python`, switch interpreters
+2. If the output shows Anaconda path like `/opt/anaconda3/bin/python`, you need to switch interpreters
 3. Select the Homebrew Python interpreter in VS Code settings
-4. Re-run the script to confirm it uses the Homebrew Python installation
+4. Re-run the script to confirm it now uses the Homebrew Python installation
 
-### Install Essential Packages
-1. Create a virtual environment
-2. Install packages in terminal:
-    ```bash
-    python3 -m pip install numpy scipy matplotlib
-    ```
-3. Verify installation:
-    ```bash
-    python3 -m pip list
-    ```
 
-### Install OpenAI Gymnasium
-1. Install the package:
-    ```bash
-    pip install "gymnasium[all]"
-    ```
+### Install some essential packages
+1. Create virtual environment
+2. run in terminal: `python3 -m pip install numpy` and similarly scipy, matplotlib
+3. run `python3 -m pip list` to check installed packages
 
-2. Test with sample code:
-    ```python
-    import gymnasium as gym
+### install open ai gymnasium
+1. run command: `pip install "gymnasium[all]"` 
+2. run python code: 
+```
+import gymnasium as gym
 
-    env = gym.make("CartPole-v1", render_mode="human")
-    observation, info = env.reset(seed=42)
+env = gym.make("CartPole-v1", render_mode="human")  # Important: set render_mode
+observation, info = env.reset(seed=42)
 
-    for _ in range(1000):
-         env.render()
-         action = env.action_space.sample()
-         observation, reward, terminated, truncated, info = env.step(action)
+for _ in range(1000):
+    env.render()  # This displays the environment
+    action = env.action_space.sample()
+    observation, reward, terminated, truncated, info = env.step(action)
 
-         if terminated or truncated:
-              observation, info = env.reset()
+    if terminated or truncated:
+        observation, info = env.reset()
 
-    env.close()
-    ```
+env.close()
+# Note: The `render()` method is used to visualize the environment.
+```
+We are done for open ai gym if you see an animation.
 
-**Success**: If you see an animated CartPole environment, OpenAI Gym is working correctly.
+
+Next, we install
+- pytorch, pytorch lightning, 
+
+
