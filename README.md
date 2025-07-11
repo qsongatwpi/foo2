@@ -1,4 +1,4 @@
-## Setting up Python with VS Code on macOS for OpenAI Gym and PINNs
+## Setting up Python with VS Code on macOS for OpenAI Gym
 
 ### Prerequisites
 - **Python in VS Code**: Search for *python in vs code* for setup instructions
@@ -53,5 +53,8 @@ We are done for open ai gym if you see an animation.
 
 Next, we install
 - pytorch, pytorch lightning, 
+
+Others:
+- [torch.nn](./src/torch_nn_tutorial.ipynb)
 
 
