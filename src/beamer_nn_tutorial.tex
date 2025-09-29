@@ -1,0 +1,128 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\title{Neural Networks with PyTorch - Tutorial}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}{What are Neural Networks?}
+  \begin{itemize}
+    \item Computational models inspired by biological neural networks
+    \item Consist of interconnected nodes (neurons) in layers
+    \item Learn complex patterns from data
+  \end{itemize}
+\end{frame}
+
+\section{Key Components}
+\begin{frame}{Key Components}
+  \begin{itemize}
+    \item Neurons/Nodes: Basic processing units
+    \item Weights: Strength of connections
+    \item Biases: Help fit the data
+    \item Activation Functions: Introduce non-linearity
+    \item Layers: Input, hidden, output
+  \end{itemize}
+\end{frame}
+
+\section{PyTorch Fundamentals}
+\begin{frame}{PyTorch Fundamentals}
+  \begin{itemize}
+    \item Dynamic computational graphs
+    \item Automatic differentiation (autograd)
+    \item GPU acceleration
+    \item Rich ecosystem
+  \end{itemize}
+\end{frame}
+
+\section{Tensors}
+\begin{frame}{Tensors in PyTorch}
+  \begin{itemize}
+    \item Multi-dimensional arrays (like NumPy)
+    \item Support for GPU and autograd
+    \item Basic operations: creation, addition, multiplication, reshaping
+  \end{itemize}
+\end{frame}
+
+\section{Autograd}
+\begin{frame}{Automatic Differentiation}
+  \begin{itemize}
+    \item PyTorch computes gradients automatically
+    \item Essential for backpropagation and training
+    \item Example: $y = x^2 + 3x + 1$
+  \end{itemize}
+\end{frame}
+
+\section{Building Blocks}
+\begin{frame}{Neural Network Building Blocks}
+  \begin{itemize}
+    \item Activation functions: ReLU, Sigmoid, Tanh, Leaky ReLU
+    \item Linear layers (fully connected)
+    \item Dropout for regularization
+    \item Batch normalization for stability
+  \end{itemize}
+\end{frame}
+
+\section{Model Example}
+\begin{frame}{Example: ImprovedNet}
+  \begin{itemize}
+    \item Multiple linear layers
+    \item Dropout and batch normalization
+    \item Forward pass: Linear $\rightarrow$ BatchNorm $\rightarrow$ ReLU $\rightarrow$ Dropout
+  \end{itemize}
+\end{frame}
+
+\section{Training}
+\begin{frame}{Training a Neural Network}
+  \begin{itemize}
+    \item Forward pass: compute predictions
+    \item Loss calculation: e.g., MSELoss for regression
+    \item Backward pass: compute gradients
+    \item Optimizer step: update parameters
+  \end{itemize}
+\end{frame}
+
+\section{Evaluation}
+\begin{frame}{Evaluation and Metrics}
+  \begin{itemize}
+    \item Plot training/test loss curves
+    \item Use metrics: MSE, R\textsuperscript{2}, accuracy
+    \item Visualize predictions vs. true values
+  \end{itemize}
+\end{frame}
+
+\section{Best Practices}
+\begin{frame}{Best Practices and Tips}
+  \begin{itemize}
+    \item Start simple, increase complexity gradually
+    \item Use dropout and batch normalization
+    \item Monitor training and validation performance
+    \item Use appropriate loss functions and optimizers
+  \end{itemize}
+\end{frame}
+
+\section{Resources}
+\begin{frame}{Further Resources}
+  \begin{itemize}
+    \item PyTorch Documentation: \url{https://pytorch.org/docs/}
+    \item PyTorch Tutorials: \url{https://pytorch.org/tutorials/}
+    \item Deep Learning Book: \url{https://www.deeplearningbook.org/}
+    \item Papers With Code: \url{https://paperswithcode.com/}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \Huge Questions?
+\end{frame}
+
+\end{document}

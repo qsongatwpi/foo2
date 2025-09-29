@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Key Components}{4}{0}{2}
+\beamer@sectionintoc {3}{PyTorch Fundamentals}{5}{0}{3}
+\beamer@sectionintoc {4}{Tensors}{6}{0}{4}
+\beamer@sectionintoc {5}{Autograd}{7}{0}{5}
+\beamer@sectionintoc {6}{Building Blocks}{8}{0}{6}
+\beamer@sectionintoc {7}{Model Example}{9}{0}{7}
+\beamer@sectionintoc {8}{Training}{10}{0}{8}
+\beamer@sectionintoc {9}{Evaluation}{11}{0}{9}
+\beamer@sectionintoc {10}{Best Practices}{12}{0}{10}
+\beamer@sectionintoc {11}{Resources}{13}{0}{11}
