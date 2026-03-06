@@ -1,6 +1,6 @@
 
 - [gym setup](./gym_setting.md)
-- [Tensors](./tensor.ipynb)
+- [Tensors](./src/tensor.ipynb)
 - [SGD](./src/sgd.ipynb)
 - [Linear regression by torch.linalg](./src/linear_regression_la.ipynb)
 - [Curve fitting by torch.nn](./src/note_torch_nn.ipynb)
