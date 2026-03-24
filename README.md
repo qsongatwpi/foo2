@@ -1,5 +1,5 @@
 
-- [gym setup](./gym_setting.md)
+- [Gym setup](./gym_setting.md)
 - [Tensors](./src/tensor.ipynb)
 - [SGD](./src/sgd.ipynb)
 - [Linear regression by torch.linalg](./src/linear_regression_la.ipynb)
