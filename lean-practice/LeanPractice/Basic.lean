@@ -24,3 +24,5 @@ example (P Q : Prop) (hP : P) (hQ : Q) : P ∧ Q := by
   constructor
   · exact hP
   · exact hQ
+example (a b : Nat) (h : a = b) : b = a := by
+  exact h.symm
